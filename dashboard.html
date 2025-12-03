@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Edge Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+    <script src="firebase-config.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Dashboard</h1>
+    <p>Welcome to your Crypto Edge Account</p>
+</header>
+
+<section class="user-info">
+    <h2>User Details</h2>
+    <p id="user-email">Loading...</p>
+    <button onclick="logout()" class="btn-logout">Logout</button>
+</section>
+
+<script>
+firebase.auth().onAuthStateChanged(user => {
+    if (!user) {
+        window.location.href = "auth.html";
+    } else {
+        document.getElementById("user-email").innerText = 
+            "Logged in as: " + user.email;
+    }
+});
+
+function logout() {
+    firebase.auth().signOut().then(() => {
+        window.location.href = "auth.html";
+    });
+}
+</script>
+
+</body>
+</html>

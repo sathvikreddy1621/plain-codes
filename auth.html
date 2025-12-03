@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Edge - Auth</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+    <script src="firebase-config.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Crypto Edge</h1>
+    <p>Login / Signup</p>
+</header>
+
+<section class="auth-section">
+
+    <div class="auth-box">
+        <h2>Email Login</h2>
+
+        <input id="email" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
+
+        <button onclick="loginEmail()">Login</button>
+        <button onclick="signupEmail()">Create Account</button>
+    </div>
+
+    <div class="auth-box">
+        <h2>Google Login</h2>
+        <button onclick="googleLogin()">Login with Google</button>
+    </div>
+
+    <div class="auth-box">
+        <h2>Phone Login</h2>
+
+        <input id="phone" type="text" placeholder="+91 9876543210">
+        <div id="recaptcha-container"></div>
+
+        <button onclick="sendOTP()">Send OTP</button>
+
+        <input id="otp" type="text" placeholder="Enter OTP">
+        <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+</section>
+
+<script src="firebase-auth.js"></script>
+</body>
+</html>

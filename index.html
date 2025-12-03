@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Edge</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+    <script src="firebase-config.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Crypto Edge</h1>
+    <p>Your Gateway to Real-Time Crypto Insights</p>
+</header>
+
+<div class="center-btn">
+    <a href="dashboard.html" class="btn">Go to Dashboard</a>
+    <a href="auth.html" class="btn">Login / Signup</a>
+</div>
+
+<section class="prices-section">
+    <h2>Live Cryptocurrency Prices</h2>
+
+    <div class="price-container">
+        <div class="card">
+            <h3>Bitcoin (BTC)</h3>
+            <p class="price" id="btc-price">$--</p>
+        </div>
+
+        <div class="card">
+            <h3>Ethereum (ETH)</h3>
+            <p class="price" id="eth-price">$--</p>
+        </div>
+
+        <div class="card">
+            <h3>Dogecoin (DOGE)</h3>
+            <p class="price" id="doge-price">$--</p>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

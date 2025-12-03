@@ -1,0 +1,104 @@
+* {
+    margin: 0; padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d1117;
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background: #161b22;
+    border-bottom: 2px solid #2ea043;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #2ea043;
+}
+
+.center-btn {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: black;
+    background: #2ea043;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/* Price Cards */
+.prices-section {
+    padding: 40px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2ea043;
+    text-align: center;
+}
+
+.price {
+    font-size: 2rem;
+    color: #2ea043;
+}
+
+/* Auth */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.auth-box {
+    background: #161b22;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2ea043;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #0d1117;
+    border: 1px solid #444;
+    color: white;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #2ea043;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-logout {
+    padding: 12px 20px;
+    background: red;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
